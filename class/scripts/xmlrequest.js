@@ -1,6 +1,8 @@
-const ajax = new XMLHttpRequest();
+function requisitarPagina(url){
+  const ajax = new XMLHttpRequest();
 
-ajax.open('GET', 'pagina_1_conteudo.html')
-ajax.send()
+  ajax.open('GET', url)
+  ajax.send()
 
-console.log(ajax)
+  console.log(ajax)
+}
