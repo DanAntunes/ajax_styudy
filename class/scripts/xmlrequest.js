@@ -23,9 +23,11 @@ function requisitarPagina(url){
       // console.log(ajax.readyState)
       // console.log(ajax.status)
       // console.log(ajax.responseText)
-
       document.getElementById('conteudo').innerHTML = ajax.responseText
   }
+    if(ajax.readyState === 4 && ajax.status  === 404){
+      document.getElementById('conteudo').innerHTML = '<h1>Erro ao carregar a página</h1>'
+    }
   }
   ajax.send()
 
