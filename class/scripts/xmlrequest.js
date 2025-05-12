@@ -1,5 +1,7 @@
 function requisitarPagina(url){
 
+  document.getElementById('conteudo').innerHTML = ''
+
   if(!document.getElementById('loading')){
   const imgLoading = document.createElement('img')
   imgLoading.id = 'loading'
